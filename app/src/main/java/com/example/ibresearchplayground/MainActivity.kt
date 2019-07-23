@@ -6,7 +6,6 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
 import com.example.ibresearchplayground.ui.login.LoginActivity
 
 import kotlinx.android.synthetic.main.activity_main.*
@@ -20,6 +19,11 @@ class MainActivity : AppCompatActivity() {
 
         btn_login_activity.setOnClickListener {
             val intent = Intent(this, LoginActivity :: class.java)
+            startActivity(intent)
+        }
+
+        btn_content_activity.setOnClickListener {
+            val intent = Intent(this, Content_Page :: class.java)
             startActivity(intent)
         }
 

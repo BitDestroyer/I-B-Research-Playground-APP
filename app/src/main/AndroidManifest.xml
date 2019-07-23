@@ -10,6 +10,11 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
+                android:name=".Content_Page"
+                android:label="@string/title_activity_content__page"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
                 android:name=".ui.login.LoginActivity"
                 android:label="@string/title_activity_login">
         </activity>
