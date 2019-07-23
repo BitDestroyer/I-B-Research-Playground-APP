@@ -17,19 +17,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        //this button when activated starts the login activity
         btn_login_activity.setOnClickListener {
             val intent = Intent(this, LoginActivity :: class.java)
             startActivity(intent)
         }
 
+        //this button on activation begins the activity for the main content page
         btn_content_activity.setOnClickListener {
-            val intent = Intent(this, Content_Page :: class.java)
+            val intent = Intent(this, ContentPage :: class.java)
             startActivity(intent)
         }
 
 
+        //notifications button
         fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+            Snackbar.make(view, "No notification yet", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show()
         }
 

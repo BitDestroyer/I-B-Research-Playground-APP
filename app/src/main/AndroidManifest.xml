@@ -10,7 +10,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity
-                android:name=".Content_Page"
+                android:name=".ContentPage"
                 android:label="@string/title_activity_content__page"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
